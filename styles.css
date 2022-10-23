@@ -1,19 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
     min-height: 100vh;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
 }
 
 .sidebar {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     background-color: #084c61;
+    padding-left: 20px;
+    min-width: 35vh;
+}
+
+.sidebar li {
+    padding-top: 10px;
+    font-size: larger;
+}
+
+.nav {
+    display: flex;
+    padding-top: 70px;
 }
 
 .content {
@@ -30,4 +53,79 @@ body {
 
 .main-content {
     background-color: grey;
+}
+
+.search {
+    display: flex;
+    padding-left: 20px;
+}
+
+.searchbar {
+    flex: 1;
+}
+
+.searchbar input {
+    width: 100%;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.greetings {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    min-width: 200px;
+}
+
+.greet {
+    padding-left: 20px;
+}
+
+.profilepic, .profilepic .larger {
+    border-radius: 50%;
+}
+
+.profilepic .larger {
+    width: 60px;
+    height: 60px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-self: center;
+    gap: 20px;
+    padding-right: 50px;
+}
+
+.buttons button {
+    height: 30px;
+    border-radius: 20px;
+    font-weight: 600;
+    min-width: 60px;
+}
+
+.greetings, .profile, .search, .buttons {
+    align-self: center;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    padding-top: 3vh;
+}
+
+.nav h4 {
+    padding-left: 4px;
 }
