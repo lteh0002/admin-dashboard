@@ -26,6 +26,7 @@ body {
     grid-row: 1 / 3;
     background-color: #084c61;
     padding-left: 10px;
+    min-width: 275px;
 }
 
 .sidebar li {
